@@ -93,7 +93,8 @@ const FlashSaleLayout: React.FC = () => {
     { id: 3, name: "Product 3", price: "$20.00", image: "https://via.placeholder.com/150" ,rating:1},
     { id: 4, name: "Product 4", price: "$15.00", image: "https://via.placeholder.com/150" ,rating:2 },
     { id: 5, name: "Product 5", price: "$18.00", image: "https://via.placeholder.com/150" ,rating:1},
-    { id: 6, name: "Product 6", price: "$22.00", image: "https://via.placeholder.com/150" ,rating:3},
+    { id: 6, 
+      name: "Product 6", price: "$22.00", image: "https://via.placeholder.com/150" ,rating:3},
     { id: 7, name: "Product 7", price: "$28.00", image: "https://via.placeholder.com/150" ,rating:5},
     { id: 8, name: "Product 8", price: "$35.00", image: "https://via.placeholder.com/150" ,rating:3}
   ];
