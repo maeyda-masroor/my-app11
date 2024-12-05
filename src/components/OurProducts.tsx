@@ -158,9 +158,10 @@ const FlashSaleLayout: React.FC = () => {
       {/* Third Row: Product Cards */}
       <div className="relative flex-grow p-4 bg-white shadow">
         {/* Product Cards */}
+        <div className="grid-rows-2">        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {/* Map through the products and display only the ones within the current range */}
-          {products.slice(currentIndex, currentIndex + 4).map((product) => (
+          {products.slice(currentIndex, currentIndex + 8).map((product) => (
             <div key={product.id} className="p-4 bg-gray-100 rounded shadow w-[270px] h-[350px]">
               <div className="bg-red-600 w-10 h-5 m-2">{product.discount}</div>  
               <img
@@ -173,6 +174,7 @@ const FlashSaleLayout: React.FC = () => {
               <div className="flex"><StarRating rating={product.rating}/><p className="text-black">({product.reviewNo})</p></div>
             </div>
           ))}
+        </div>
         </div>
       </div>
       <center><button className="bg-red-600 w-40 mt-4">View All Products</button></center>

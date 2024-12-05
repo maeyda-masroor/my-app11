@@ -11,12 +11,11 @@ const StarRating: React.FC<StarRatingProps> = ({ rating }) => {
       <ReactStars
         count={5}
         value={rating}
-        size={24}
+        size={15}
         color2={'#ffd700'} // Gold color for filled stars
         edit={false} // Disable user editing of the rating
       />
-      <span className="ml-2">{rating} stars</span>
-    </div>
+     </div>
   );
 };
 
